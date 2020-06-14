@@ -1,0 +1,1 @@
+[01-Aug-2018 12:41:08 America/Chicago] PHP Fatal error:  Call to undefined method mysqli_result::num_rows() in /home/futuronerdcom/public_html/app/admin/index.php on line 36

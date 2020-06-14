@@ -1,7 +1,8 @@
 <?php 
 
 //$servidor = "localhost";
-$servidor = "ffn96u87j5ogvehy.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+// $servidor = "ffn96u87j5ogvehy.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+$servidor = "futuronerddb.mysql.uhserver.com";
 
 // $usuario = "futurone_admin";
 // $senha = "N]K}mqzobm-*";
@@ -17,9 +18,13 @@ $servidor = "ffn96u87j5ogvehy.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
 // $banco = "futuro_nerd_local";
 
 // DB On
-$usuario = "uvmrvwcmw19kt2su";
-$senha = "zawuvgqtjcs5t9ff";
-$banco = "p040hst38t6dnx4w";
+// $usuario = "uvmrvwcmw19kt2su";
+// $senha = "zawuvgqtjcs5t9ff";
+// $banco = "p040hst38t6dnx4w";
+
+$usuario = "futuroadmin";
+$senha = "Lafmlfo@1855";
+$banco = "futuronerddb";
 
 // $usuario = "root";
 // $senha = "";

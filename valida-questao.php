@@ -6,6 +6,7 @@ if(isset($_POST['titulo'])){
 
     $serie = $mysqli->real_escape_string($_POST['serie']);
     $materia = $mysqli->real_escape_string($_POST['materia']);
+    $tempo = $mysqli->real_escape_string($_POST['tempo']);
     $titulo = $mysqli->real_escape_string($_POST['titulo']);
     $questao = $mysqli->real_escape_string($_POST['questao']);
     $respostaErrada1 = $mysqli->real_escape_string($_POST['errada1']);
@@ -27,6 +28,7 @@ if(isset($_POST['titulo'])){
 
     $sql = 'INSERT INTO questoes (titulo,
                                   questao,
+                                  tempo,
                                   imagem, 
                                   id_serie, 
                                   id_materia, 
@@ -36,6 +38,7 @@ if(isset($_POST['titulo'])){
                                   resposta_correta) VALUES (
                                   "'.$titulo.'",
                                   "'.$questao.'",
+                                  "'.$tempo.'",
                                   "'.$arquivo.'",
                                   "'.$serie.'",
                                   "'.$materia.'",

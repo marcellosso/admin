@@ -23,6 +23,7 @@
         $idMateria  = $questao['id_materia'];
         $imagem     = $questao['imagem'];
         $questaot   = $questao['questao'];
+        $tempo      = $questao['tempo'];
         $errada1    = $questao['resposta_errada'];
         $errada2    = $questao['resposta_errada1'];
         $errada3    = $questao['resposta_errada2'];
@@ -83,6 +84,11 @@
                             <div class="form-group">
                                 <label>Pergunta</label>
                                 <textarea class="form-control" id="titulo" name="titulo" rows="4" required><?php echo $titulo;?></textarea>
+                                <input type="hidden"value="<?php echo $id;?>" name="id">
+                            </div>
+                            <div class="form-group">
+                                <label>Tempo</label>
+                                <input type="number" class="form-control" id="tempo" name="tempo" min="30" value=<?php echo $tempo;?> required></input>
                                 <input type="hidden"value="<?php echo $id;?>" name="id">
                             </div>
                             <div class="form-group">

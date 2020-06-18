@@ -7,6 +7,7 @@ if(isset($_POST['titulo'])){
     $id = $_POST['id'];
     $serie = $mysqli->real_escape_string($_POST['serie']);
     $materia = $mysqli->real_escape_string($_POST['materia']);
+    $tempo = $mysqli->real_escape_string($_POST['tempo']);
     $titulo = $mysqli->real_escape_string($_POST['titulo']);
     $questao = $mysqli->real_escape_string($_POST['questao']);
     $respostaErrada1 = $mysqli->real_escape_string($_POST['errada1']);
@@ -28,6 +29,7 @@ if(isset($_POST['titulo'])){
 
             $sql = 'UPDATE questoes SET titulo="'.$titulo.'",
             questao="'.$questao.'",
+            tempo="'.$tempo.'",
             imagem="'.$arquivo.'",
             id_serie="'.$serie.'",
             id_materia="'.$materia.'",
@@ -41,6 +43,7 @@ if(isset($_POST['titulo'])){
     } else {
         $sql = 'UPDATE questoes SET titulo="'.$titulo.'",
         questao="'.$questao.'",
+        tempo="'.$tempo.'",
         id_serie="'.$serie.'",
         id_materia="'.$materia.'",
         resposta_errada="'.$respostaErrada1.'",

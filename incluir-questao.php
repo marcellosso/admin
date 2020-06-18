@@ -38,6 +38,10 @@
                                 </select>
                             </div>
                             <div class="form-group">
+                                <label>Tempo</label>
+                                <input type="number" class="form-control" id="tempo" name="tempo" min="30" required></input>
+                            </div>
+                            <div class="form-group">
                                 <label>Pergunta</label>
                                 <textarea class="form-control" id="titulo" name="titulo" rows="4" required></textarea>
                             </div>

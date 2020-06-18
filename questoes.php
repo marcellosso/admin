@@ -34,6 +34,7 @@
                   <th>Série</th>
                   <th>Matéria</th>
                   <th>Perguntas</th>
+                  <th>Tempo</th>
                   <th style="min-width:50px;">Opções</th>
               </tr>
               </thead>
@@ -43,6 +44,7 @@
                       <th>Série</th>
                       <th>Matéria</th>
                       <th>Perguntas</th>
+                      <th>Tempo</th>
                       <th>Opções</th>
                   </tr>
               </tfoot>
@@ -76,12 +78,13 @@
             {"data":"serie"},
             {"data":"materia"},
             {"data":"titulo"},
+            {"data":"tempo"},
             {"data":"id","class":"text-center"}
           ],
           "fnRowCallback": function( nRow, aData, iDisplayIndex, iDisplayIndexFull ) {
             var id = aData["id"];
             var btns = '<a href="alterar-questao.php?id='+ id +'"><button class="btn btn-xs btn-info" title="Alterar"><i class="fa fa-edit"></i></button></a> <a onclick="excluir('+id+');"><button class="btn btn-xs btn-danger" title="Excluir"><i class="fa fa-times"></i></button></a>';
-            $('td:eq(4)', nRow).html(btns);
+            $('td:eq(5)', nRow).html(btns);
           },
         // # - MXTera --
         initComplete: function () {
